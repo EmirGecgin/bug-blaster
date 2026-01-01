@@ -1,4 +1,4 @@
-export default sortTicket = (tickets, preference)=>{
+export const sortTicket = (tickets, preference)=>{
     switch(preference){
         case "Hight to Low":
             return [...tickets].sort((a,b)=>b.priority.localeCompare(a.priority));
